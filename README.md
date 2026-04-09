@@ -1,6 +1,6 @@
  Site Dinosaures - Projet HTML/CSS
 
-## 🎯 Objectif
+## Objectif
 
 Mettre en pratique :
 
@@ -30,7 +30,7 @@ Ce projet présente une galerie de dinosaures avec une interface moderne, un for
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 * HTML5
 * CSS3
