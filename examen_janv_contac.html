@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <!-- Importer les polices Google -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="exam_janvier.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXAMEN</title>
+  </head>
+  <body>
+    <div class="site-dino">
+      <header>
+        <nav>
+          <div class="menu">
+            <div class="logo">
+              <a href="index.html">
+                <!-- Logo de l'entreprise -->
+                <img class="logo" src="/logo dinor.png" alt="dinosaure" />
+              </a>
+            </div>
+        </nav>
+      </header>
+      <section>
+      <main>
+        <fieldset id="connexion">
+          <legend>Infos personnelles</legend>
+          <h4>Contact-nous</h4>      
+          <!-- Formulaire de contact -->
+          <form action="/submit" method="post">
+        <label for="name">Nom</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="EX: Nzabi"
+          required="required"/>
+        <label for="email">Email</label>
+        <input
+          type="mail"
+          id="email"
+          name="email"
+          required="required"
+          placeholder="EX: body@gmail.com"/>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required="required"></textarea>
+        <input type="submit" value="Envoyer" class="clic" />
+          </form>
+        </fieldset>
+      </main>
+    </section>
+      <!-- bas de page-->
+      <section class="en_bs">
+        <footer>
+          <div class="resour1">
+            <div class="foot1">
+              <h2 class="essai_tire">Ressources</h2>
+              <div class="essai">
+                <a href="#">Flaticon</a>
+                <a href="#">Html</a>
+                <a href="#">CSS</a>
+              </div>
+            </div>
+            <div class="foot2">
+              <h2 class="essai_tire">Vérification</h2>
+              <div class="essai">
+                <a href="#">Html validator</a>
+                <a href="#">Css validator</a>
+              </div>
+            </div>
+          </div>
+          <span class="bas_page">© 2024 ESA-IE. Inc. Tous droits réservés.</span>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

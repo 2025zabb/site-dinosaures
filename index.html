@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXAMEN</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Nunito&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="exam_janvier.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Message de bienvenue */
+    #welcome-message {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 18px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Message affiché -->
+  <div id="welcome-message"></div>
+
+  <script>
+    let prenom = prompt("Quel est ton prénom ?");
+
+    let message = document.getElementById("welcome-message");
+    message.textContent = `BONJOUR ${prenom}, bienvenue sur mon SUPER SITE !!`;
+
+    // Disparition après 3 secondes avec effet
+    setTimeout(() => {
+      message.style.transition = "opacity 2s";
+      message.style.opacity = "0";
+    }, 3000);
+  </script>
+
+  <div class="site-dino">
+    <header>
+      <nav>
+        <div class="menu">
+          <div class="logo">
+            <a href="exam_janvier.html"><img src="./logo dinor.png" class="logo" /></a>
+          </div>
+
+          <div class="peleo action-button"><a href="#tico1">Peléoart</a></div>
+
+          <div class="action-button cont">
+            <a href="examen_janv_contac.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Dinosaures</h1>
+
+        <div class="container">
+          <div class="dino">
+            <img class="dino1" src="dino1.jpg" alt="dino1" />
+            <div class="sepa_titre">
+              <h2 class="sec_titre"><a href="https://fr.wikipedia.org/wiki/Spinosaurus" target="_blank">Spinosaure</a></h2>
+              <p>
+                Le Spinosaures est un dinosaure carnivore qui a vécu il y a environ 68 millions d'années.
+              </p>
+            </div>
+          </div>
+
+          <div class="dino">
+            <img class="dino1" src="dino2.jpg" alt="dino2" />
+            <div class="sepa_titre">
+              <h2 class="sec_titre"><a href="https://fr.wikipedia.org/wiki/Oviraptor" target="_blank">Oviraptor</a></h2>
+              <p>
+                Le Oviraptor est un dinosaure herbivore qui a vécu il y a 68 millions d'années.
+              </p>
+            </div>
+          </div>
+
+          <div class="dino">
+            <img class="dino1" src="dino3.jpg" alt="dino3" />
+            <div class="sepa_titre">
+              <h2 class="sec_titre"><a href="https://fr.wikipedia.org/wiki/Ankylosaurus" target="_blank">Ankylosaure</a></h2>
+              <p>
+                L'Ankylosaure est un dinosaure carnivore qui a vécu il y a environ 75 millions d'années.
+              </p>
+            </div>
+          </div>
+
+          <div class="dino">
+            <img class="dino1" src="dino4.jpg" alt="dino4" />
+            <div class="sepa_titre">
+              <h2 class="sec_titre"><a href="https://en.wikipedia.org/wiki/Maiasaura" target="_blank">Maiasaura</a></h2>
+              <p>
+                Maiasaura mesurait environ 9 mètres de long.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <h1 id="tico1">Paléart</h1>
+
+        <figure>
+          <iframe width="100%" height="315"
+            src="https://www.youtube.com/embed/qZqjdt8N5Wc"
+            frameborder="0" allowfullscreen></iframe>
+
+          <figcaption>
+            Votre navigateur <span class="sp">ne supporte pas</span> la vidéo.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <div class="resour1">
+        <div class="foot1">
+          <h2 class="essai_tire">Ressources</h2>
+          <div class="essai">
+            <a href="#">Flaticon</a>
+            <a href="#">Html</a>
+            <a href="#">CSS</a>
+          </div>
+        </div>
+
+        <div class="foot2">
+          <h2 class="essai_tire">Vérification</h2>
+          <div class="essai">
+            <a href="#">Html validator</a>
+            <a href="#">Css validator</a>
+          </div>
+        </div>
+      </div>
+
+      <span class="bas_page">© 2024 ESA-IE. Inc. Tous droits réservés.</span>
+    </footer>
+  </div>
+
+</body>
+</html>
